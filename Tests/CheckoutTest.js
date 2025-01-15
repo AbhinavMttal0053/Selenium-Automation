@@ -1,5 +1,5 @@
 const CheckoutPage = require("../Pages/Checkout");
-
+require('dotenv').config();
 module.exports = async function checkoutTest(driver) {
     const checkoutPage = new CheckoutPage(driver);
 
@@ -11,7 +11,8 @@ module.exports = async function checkoutTest(driver) {
         // console.log("Filling out the checkout form...");
 
         // call the function to fill the checkout form
-        await checkoutPage.fillCheckoutForm("Abhinav", "Mittal", "133001");
+        await checkoutPage.fillCheckoutForm(process.env.CUS_FNAME,
+             process.env.CUS_SNAME, process.env.CUS_PINCODE);
 
         // console.log("Verifying checkout overview...");
 

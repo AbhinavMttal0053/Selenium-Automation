@@ -46,7 +46,7 @@ Steps to Execute the Scripts
 
 1. Clone the Repository
 
-git clone <repository_url>
+git clone <https://github.com/AbhinavMttal0053/Selenium-Automation>
 cd <repository_folder>
 
 2. Install Dependencies

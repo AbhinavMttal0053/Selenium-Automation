@@ -2,12 +2,14 @@
 
 const CreateDriver = require('../Utils/Driver');
 const LoginPage = require('../Pages/Login');
-
+// const env = require('dotenv');
+require('dotenv').config();
 let driver;
 let isLoggedIn = false; // Tracks login state
 let savedCookies = []; // Stores cookies for reuse
-
+console.log(process.env.USER_NAME);
 module.exports = {
+
     // initialize Session  
     initializeSession: async () => {
 
@@ -27,7 +29,7 @@ module.exports = {
 
             try {
                 await Login.navigate();
-                await Login.login('performance_glitch_user', 'secret_sauce');
+                await Login.login(process.env.USER_NAME, process.env.USER_PWD);
 
                 // Save cookies after successful login to manage sessions
                 savedCookies = await driver.manage().getCookies();
