@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 README: Automated Testing Framework
 
 Overview
@@ -103,3 +104,7 @@ Contact
 
 For questions, feedback, or issues, please contact [abhinavwork0053@gmail.com].
 
+=======
+# Selenium-Automation
+This project is an automated testing framework designed for validating a web application using Selenium WebDriver with JavaScript (Node.js). It includes scripts to test functionalities such as login, adding items to the cart, removing items, checkout workflow, and logout functionality.
+>>>>>>> da45ca8f17e80fb1cc8ef188742b942017e0d66b
